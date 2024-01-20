@@ -1,0 +1,174 @@
+
+//  main.cpp
+//  student grading system
+//
+#include<iostream>
+using namespace std;
+#include<cstring>
+class Student
+{ private:
+    int marks1;
+    int marks2;
+    int marks3;
+    int marks4;
+    int marks5;
+    string name;
+public:
+    Student (int m1,int m2,int m3,int m4,int m5,string n)
+    { marks1=m1;
+    marks2=m2;
+    marks3=m3;
+    marks4=m4;
+    marks5=m5;
+    name=n;
+    }
+    float avg()
+    { return (marks1+marks2+marks3+marks4+marks5)/5.0;
+    }
+    char grade()
+    { float average=avg();
+    if(average>90){ cout<<"A1 Grade"<<endl;    }
+    else if(average<90&&average>80){ cout<<"A2 Grade"<<endl;}
+    else if(average<80&&average>70){ cout<<"B1 Grade"<<endl;}
+    else if(average<70&&average>60){ cout<<"B2 Grade"<<endl;}
+    else if(average<60&&average>50){ cout<<"C1 Grade"<<endl;}
+    else if(average<50&&average>35){ cout<<"C2 Grade"<<endl;}
+    else {cout<<"FAIL"<<endl;}
+        return ' ';
+    }
+    int maxim()
+    { if(marks1>marks2&&marks1>marks3&&marks1>marks4&&marks1>marks5)
+    return marks1;
+    else if(marks2>marks3&&marks2>marks4&&marks2>marks5)
+    return marks2;
+    else if(marks3>marks4&&marks3>marks5)
+    return marks3;
+    else if (marks4>marks5)
+    return marks4;
+    else return marks5;
+    }
+     char maximgrade()
+    { if( maxim()==marks1)
+     {
+     if (marks1>90){cout<<"A1 Grade";}
+      else if(marks1>80){cout<<"A2 Grade";}
+      else if(marks1>70){cout<<"B1 Grade";}
+      else if(marks1>60){cout<<"B2 Grade";}
+      else if(marks1>50){cout<<"C1 Grade";}
+      else if(marks1>35){cout<<"C2 Grade";} }
+    else if( maxim()==marks2)
+     {
+     if (marks2>90){cout<<"A1 Grade";}
+      else if(marks2>80){cout<<"A2 Grade";}
+      else if(marks2>70){cout<<"B1 Grade";}
+      else if(marks2>60){cout<<"B2 Grade";}
+      else if(marks2>50){cout<<"C1 Grade";}
+      else if(marks2>35){cout<<"C2 Grade";} }
+    else if( maxim()==marks3)
+     {
+     if (marks3>90){cout<<"A1 Grade";}
+      else if(marks3>80){cout<<"A2 Grade";}
+      else if(marks3>70){cout<<"B1 Grade";}
+      else if(marks3>60){cout<<"B2 Grade";}
+      else if(marks3>50){cout<<"C1 Grade";}
+      else if(marks3>35){cout<<"C2 Grade";} }
+          else if( maxim()==marks4)
+     {
+     if (marks4>90){cout<<"A1 Grade";}
+      else if(marks4>80){cout<<"A2 Grade";}
+      else if(marks4>70){cout<<"B1 Grade";}
+      else if(marks4>60){cout<<"B2 Grade";}
+      else if(marks4>50){cout<<"C1 Grade";}
+      else if(marks4>35){cout<<"C2 Grade";} }
+          else if( maxim()==marks5)
+     {
+     if (marks5>90){cout<<"A1 Grade";}
+      else if(marks5>80){cout<<"A2 Grade";}
+      else if(marks5>70){cout<<"B1 Grade";}
+      else if(marks5>60){cout<<"B2 Grade";}
+      else if(marks5>50){cout<<"C1 Grade";}
+      else if(marks5>35){cout<<"C2 Grade";} }
+      else { cout<<"FAIL";}
+         return ' ';
+    }
+    int minim()
+    { if(marks1<marks2&&marks1<marks3&&marks1<marks4&&marks1<marks5)
+    return marks1;
+    else if(marks2<marks3&&marks2<marks4&&marks2<marks5)
+    return marks2;
+    else if(marks3<marks4&&marks3<marks5)
+    return marks3;
+    else if (marks4<marks5)
+    return marks4;
+    else return marks5;
+    }
+    char minimgrade()
+    { if( minim()==marks1)
+     {
+     if (marks1>90){cout<<"A1 Grade";}
+      else if(marks1>80){cout<<"A2 Grade";}
+      else if(marks1>70){cout<<"B1 Grade";}
+      else if(marks1>60){cout<<"B2 Grade";}
+      else if(marks1>50){cout<<"C1 Grade";}
+      else if(marks1>35){cout<<"C2 Grade";} }
+    else if( minim()==marks2)
+     {
+     if (marks2>90){cout<<"A1 Grade";}
+      else if(marks2>80){cout<<"A2 Grade";}
+      else if(marks2>70){cout<<"B1 Grade";}
+      else if(marks2>60){cout<<"B2 Grade";}
+      else if(marks2>50){cout<<"C1 Grade";}
+      else if(marks2>35){cout<<"C2 Grade";} }
+    else if( minim()==marks3)
+     {
+     if (marks3>90){cout<<"A1 Grade";}
+      else if(marks3>80){cout<<"A2 Grade";}
+      else if(marks3>70){cout<<"B1 Grade";}
+      else if(marks3>60){cout<<"B2 Grade";}
+      else if(marks3>50){cout<<"C1 Grade";}
+      else if(marks3>35){cout<<"C2 Grade";} }
+          else if( minim()==marks4)
+     {
+     if (marks4>90){cout<<"A1 Grade";}
+      else if(marks4>80){cout<<"A2 Grade";}
+      else if(marks4>70){cout<<"B1 Grade";}
+      else if(marks4>60){cout<<"B2 Grade";}
+      else if(marks4>50){cout<<"C1 Grade";}
+      else if(marks4>35){cout<<"C2 Grade";} }
+          else if( minim()==marks5)
+     {
+     if (marks5>90){cout<<"A1 Grade";}
+      else if(marks5>80){cout<<"A2 Grade";}
+      else if(marks5>70){cout<<"B1 Grade";}
+      else if(marks5>60){cout<<"B2 Grade";}
+      else if(marks5>50){cout<<"C1 Grade";}
+      else if(marks5>35){cout<<"C2 Grade";} }
+      else { cout<<"FAIL";}
+        return ' ';
+    }
+};
+
+int main(int argc, char** argv)
+{string n;
+cout<<"Enter Your Name"<<endl;
+cin>>n;
+cout<<"Hello "<<n<<endl;
+int m1,m2,m3,m4,m5;
+    cout<<"Enter Your Marks In Maths : ";
+    cin>>m1;
+    cout<<"Enter Your Marks In Science : ";
+    cin>>m2;
+    cout<<"Enter Your Marks In Hindi : ";
+    cin>>m3;
+    cout<<"Enter Your Marks In Social Science : ";
+    cin>>m4;
+    cout<<"Enter Your Marks In English : ";
+    cin>>m5;
+Student s(m1,m2,m3,m4,m5,n);
+cout<<"Average Grade In All Subjects is : "<<s.grade()<<endl;
+cout<<"Maximum Marks In A Subject : "<<s.maxim()<<endl;
+cout<<"Maximum Grade : "<<s.maximgrade()<<endl;
+cout<<"Minimum Marks In A Subject : "<<s.minim()<<endl;
+cout<<"Minimum Grade : "<<s.minimgrade()<<endl;
+    return 0;
+}
