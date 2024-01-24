@@ -1,0 +1,207 @@
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+class booking_system
+{
+public:
+    int number;
+    int seat12;
+    int seat23;
+    int seat34;
+    int seat45;
+    int seat56;
+    booking_system(int n,int r,int t,int y,int u,int i)
+    {number=n;
+    seat12=r;
+    seat23=t;
+    seat34=y;
+    seat45=u;
+    seat56=i;
+    }
+    char getSeat12() { return seat12;}
+char fighter(){cout<<"                       FIGHTER"<<endl;
+    cout<<"CINEMAS LIST :- "<<endl;
+    cout<<"1.MBD MALL : 9:00 AM, 11:30 AM, 1:30 PM, 4:00 PM, 7:30 PM"<<endl;
+    cout<<"2.CURO HIGHSTREET : 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 5:30 PM"<<endl;
+    cout<<"3.PVR CINEPOLIS : 9:00 AM, 10:30 AM, 1:30 PM, 3:00 PM, 4:30 PM"<<endl;
+    return ' ';
+}
+char ironman(){cout<<"                       IRON MAN"<<endl;
+    cout<<"CINEMAS LIST :- "<<endl;
+    cout<<"1.MBD MALL : 9:00 AM, 11:30 AM, 1:30 PM, 4:00 PM, 7:30 PM"<<endl;
+    cout<<"2.CURO HIGHSTREET : 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 5:30 PM"<<endl;
+    cout<<"3.PVR CINEPOLIS : 9:00 AM, 10:30 AM, 1:30 PM, 3:00 PM, 4:30 PM"<<endl;
+    return ' ';
+}
+char avengersendgame(){cout<<"               AVENGERS END GAME"<< endl;
+    cout<<"CINEMAS LIST :- "<<endl;
+    cout<<"1.MBD MALL : 9:00 AM, 11:30 AM, 1:30 PM, 4:00 PM, 7:30 PM"<<endl;
+    cout<<"2.CURO HIGHSTREET : 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 5:30 PM"<<endl;
+    cout<<"3.PVR CINEPOLIS : 9:00 AM, 10:30 AM, 1:30 PM, 3:00 PM, 4:30 PM"<<endl;
+    return ' ';
+}
+char animal(){cout<<"                        ANIMAL"<<endl;
+    cout<<"CINEMAS LIST :- "<<endl;
+    cout<<"1.MBD MALL : 9:00 AM, 11:30 AM, 1:30 PM, 4:00 PM, 7:30 PM"<<endl;
+    cout<<"2.CURO HIGHSTREET : 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 5:30 PM"<<endl;
+    cout<<"3.PVR CINEPOLIS : 9:00 AM, 10:30 AM, 1:30 PM, 3:00 PM, 4:30 PM"<<endl;
+    return ' ';
+}
+char kabirsingh(){cout<<"                   KABIR SINGH"<<endl;
+    cout<<"CINEMAS LIST :- "<<endl;
+    cout<<"1.MBD MALL : 9:00 AM, 11:30 AM, 1:30 PM, 4:00 PM, 7:30 PM"<<endl;
+    cout<<"2.CURO HIGHSTREET : 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 5:30 PM"<<endl;
+    cout<<"3.PVR CINEPOLIS : 9:00 AM, 10:30 AM, 1:30 PM, 3:00 PM, 4:30 PM"<<endl;
+    return ' ';
+}
+
+char cinema()
+{int c;
+ cin>>c;
+ if(c==1){cout<<"MBD MALL : 1.  9:00 AM, 2.  11:30 AM, 3.  1:30 PM, 4.  4:00 PM, 5.  7:30 PM"<<endl; }
+ else if(c==2){cout<<"CURO HIGHSTREET :1.  10:00 AM, 2.  11:30 AM, 3.  12:30 PM, 4.  3:00 PM, 5.  5:30 PM"<<endl;}
+ else if(c==3){    cout<<"PVR CINEPOLIS :1.  9:00 AM, 2.  10:30 AM, 3.  1:30 PM, 4.  3:00 PM, 5.  4:30 PM"<<endl;}
+else{ cout<<"INVALID NO "<<endl; }
+    return ' ';
+}
+
+char seat(){
+             cout<<"                        PRICE=250                "<<endl;
+             cout<<"          [50][49][48][][][45][44][*][42][41]      F"<<endl;
+             cout<<"           [40][39][38][37][][35][34][][][]      E"<<endl;
+             cout<<"             [][][][][][][][][][][*]       D"<<endl;
+             cout<<"         --------------------------------------------"<<endl;
+             cout<<"          [30][29][28][27][26][25][24][23][22][21]   C"<<endl;
+             cout<<"          [20][][][][][15][14][13][12][11]       B"<<endl;
+             cout<<"             [10][9][8][7][6][5][4][3][2][1]         A"<<endl;
+             cout<<"                                                       "<<endl;
+             cout<<"         ------------------------------------------"<<endl;
+             cout<<"         ------------------------------------------"<<endl;
+             cout<<"                     SCREEN THIS WAY                 "<<endl;
+             cout<<"                                                     "<<endl;
+             cout<<"            BOOKED SEATS ARE MARKED WITH [*]"<<endl;
+    return ' ';
+}
+
+char timmings(){ int d;
+cin>>d;
+if(d==1) { cout<<seat();}
+else if(d==2){ cout<<seat();}
+else if(d==3){ cout<<seat();}
+else if (d==4){ cout<<seat();}
+else if( d==5){ cout<<seat();}
+else { cout<<"INVALID TIMMINGS"<<endl;}
+    return ' ';
+}
+char seat1(){ int r;
+cout<<"ENTER YOUR SEAT NO :-"<<endl;
+cin>>r;
+if(r>501) { cout<<"INVALID SEAT NO"<<endl;
+}
+    return ' ';
+}
+char seat2(){ int r,t;
+cout<<"ENTER YOUR SEAT NO :="<<endl;
+cin>>r>>t;
+if(r>50||t>50) { cout<<"INVALID SEAT NO";
+}
+    return ' ';
+}
+char seat3(){int r,t,y;
+cout<<"ENTER YOUR SEAT NO :-"<<endl;
+cin>>r>>t>>y;
+if(r>50||t>50||y>50){cout<<"INVALID SEAT NO";
+}
+    return ' ';
+}
+char seat4(){int r,t,y,u;
+cout<<"ENTER YOUR SEAT NO :-"<<endl;
+cin>>r>>t>>y>>u;
+if(r>50||t>50||y>50||u>50){cout<<"INVALID SEAT NO";
+}
+    return ' ';
+}
+char seat5(){int r,t,y,u,i;
+cout<<"ENTER YOUR SEAT NO :-"<<endl;
+cin>>r>>t>>y>>u>>i;
+if(r>50||t>50||y>50||u>50||i>50){cout<<"INVALID SEAT NO";
+}
+    return ' ';
+}
+char seatno()
+{int g;
+ cin>>g;
+ if(g==1){ cout<<seat1()<<endl;
+ cout<<"TOTAL AMOUNT TO BE PAID INCLUDING TAXES = "<<g*250+8;}
+ else if(g==2){cout<<seat2()<<endl;
+ cout<<"TOTAL AMOUNT TO BE PAID INCLUDING TAXES = "<<g*250+16;}
+ else if(g==3){cout<<seat3()<<endl;
+ cout<<"TOTAL AMOUNT TO BE PAID INCLUDING TAXES = "<<g*250+24;}
+ else if(g==4){cout<<seat4()<<endl;
+ cout<<"TOTAL AMOUNT TO BE PAID INCLUDING TAXES = "<<g*250+32;}
+ else if(g==5){cout<<seat5()<<endl;
+ cout<<"TOTAL AMOUNT TO BE PAID INCLUDING TAXES = "<<g*250+40;}
+    return ' ';
+ }
+char payment(){ cout<<"1.CREDIT/DEBIT CARD      2.UPI      3.NET BANKING"<<endl;
+int choice;
+cin>>choice;
+switch(choice){ case 1:{ long int n; cout<<"ENTER YOUR ACCOUNT NO :-"<<endl;
+                              cin>>n;}
+                              break;
+                case 2:{ char c[100]; cout<<"ENTER YOUR UPI ID :-"<<endl;
+                              cin>>c;    }
+                              break;
+                case 3:{ char c1[100]; cout<<"ENTER YOUR NET BANKING ID :-"<<endl;
+                              cin>>c1;    }
+                              break;
+                default    : cout<<"INVALID NO";
+}
+    return ' ';
+}
+char display(){ cout<<"YOUR PAYMENT IS SUCCESSFULL"<<endl;
+cout<<"THANKS FOR BOOKING"<<endl;
+    return ' ';
+}
+};
+
+int main(int argc, char** argv) {
+    char ironman,fighter,avengersendgame,animal,kabirsingh;
+    cout<<"**************||||||||||||BOOK_MY_MOVIES||||||||||||**************"<<endl;
+    cout<<"                                                                                  "<<endl;
+    cout<<"MOVIES LIST :- "<<endl;
+    cout<<"............  .............  ....................  .............  ..............."<<endl;
+    cout<<"|1.FIGHTER |  |2.IRON MAN |  |3.AVENGERS ENDGAME|  | 4.ANIMAL  |  |5.KABIR SINGH |"<<endl;
+    cout<<"|          |  |           |  |                  |  |           |  |              |"<<endl;
+    cout<<"|Rating 8.2|  | Rating 9.0|  |    Rating 9.1    |  | Rating 8.0|  |   Rating 8.5 |" <<endl;
+    cout<<"|___|  |___|  |___|  |____|  |____|  |__________|  |___||______|  |___||_________|"<<endl;
+    int n,r=0,t=0,y=0,u=0,i=0;
+    cout<<"ENTER MOVIE NO TO SELECT MOVIE : "<<endl;
+    cin>>n;
+    booking_system b(n,r,t,y,u,i);
+    if(n==1)
+    {cout<<b.fighter();}
+    else if (n==2)
+    {cout<<b.ironman();}
+    else if(n==3)
+    {cout<<b.avengersendgame();}
+    else if (n==4){cout<<b.animal();}
+    else if(n==5)
+    {cout<<b.kabirsingh();}
+    else {cout<<"INVALID NO"<<endl;}
+    cout<<"SELECT YOUR CINEMA NO : "<<endl;
+    cout<<b.cinema()<<endl;
+    cout<<"SELECT YOUR SHOW TIMMINGS : "<<endl;
+    cout<<b.timmings()<<endl;
+    cout<<"YOU CAN BOOK ONLY 5 TICKETS AT ONE TIME "<<endl;
+    cout<<"ENTER HOW MANY SEATS YOU WANT TO BOOK :-"<<endl;
+    cout<<b.seatno()<<endl;
+    cout<<"SELECT MODE OF PAYMENT:- "<<endl;
+    cout<<b.payment()<<endl;
+    cout<<b.display()<<endl;
+    return 0;
+    
+}
