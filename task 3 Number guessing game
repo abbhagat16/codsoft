@@ -1,0 +1,131 @@
+//
+//  main.cpp
+//  codsoft task 3
+//
+//
+
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+class game
+{public :
+    int n,m,b;
+    game(int n, int m, int b)
+    { n=n;
+    m=m;
+    b=b;
+    }
+
+char level1()
+{ cout<<"GUESS THE NUMBER "<<endl;
+cin>>n;
+if(n==45)
+{ cout<<"COREECT NUMBER"<<endl;
+cout<<"PLAY AGAIN"<<endl;}
+else if(n>45&&n<70){ cout<<"CHOICE IS HIGH"<<endl;}
+else if(n>70){ cout<<"CHOICE IS TO HIGH"<<endl;}
+else if(n<45&&n>30){cout<<"CHOICE IS LOW"<<endl;}
+else if(n<30){ cout<<"CHOICE IS TOO LOW"<<endl;}
+cout<<"TRY AGAIN"<<endl;
+cin>>m;
+if(m==50){ cout<<"COREECT NUMBER"<<endl;
+cout<<"PLAY AGAIN"<<endl;}
+else if(m>50&&m<70){ cout<<"CHOICE IS HIGH"<<endl;}
+else if(m>70){ cout<<"CHOICE IS TO HIGH"<<endl;}
+else if(m<50&&m>30){cout<<"CHOICE IS LOW"<<endl;}
+else if(m<30){ cout<<"CHOICE IS TOO LOW"<<endl;}
+cout<<"TRY AGAIN"<<endl;
+cin>>b;
+if(b==52){ cout<<"COREECT NUMBER"<<endl;
+cout<<"PLAY AGAIN"<<endl;}
+else if(b>52&&b<70){ cout<<"CHOICE IS HIGH"<<endl;}
+else if(b>70){ cout<<"CHOICE IS TO HIGH"<<endl;}
+else if(b<52&&b>30){cout<<"CHOICE IS LOW"<<endl;}
+else if(b<30){ cout<<"CHOICE IS TOO LOW"<<endl;}
+    return ' ';
+}
+
+char level2()
+{ cout<<"GUESS THE NUMBER "<<endl;
+cin>>n;
+{
+}if(n==13){ cout<<"COREECT NUMBER"<<endl;
+cout<<"PLAY AGAIN"<<endl;}
+else if(n>13&&n<70){ cout<<"CHOICE IS HIGH"<<endl;}
+else if(n>70){ cout<<"CHOICE IS TO HIGH"<<endl;}
+else if(n<13&&n>5){cout<<"CHOICE IS LOW"<<endl;}
+else if(n<5){ cout<<"CHOICE IS TOO LOW"<<endl;}
+cout<<"TRY AGAIN"<<endl;
+cin>>m;
+if(m==50){ cout<<"COREECT NUMBER"<<endl;
+cout<<"PLAY AGAIN"<<endl;}
+else if(m>50&&m<70){ cout<<"CHOICE IS HIGH"<<endl;}
+else if(m>70){ cout<<"CHOICE IS TO HIGH"<<endl;}
+else if(m<50&&m>30){cout<<"CHOICE IS LOW"<<endl;}
+else if(m<30){ cout<<"CHOICE IS TOO LOW"<<endl;}
+cout<<"TRY AGAIN"<<endl;
+cin>>b;
+if(b==66){ cout<<"COREECT NUMBER"<<endl;
+cout<<"PLAY AGAIN"<<endl;}
+else if(b>66&&b<80){ cout<<"CHOICE IS HIGH"<<endl;}
+else if(b>80){ cout<<"CHOICE IS TO HIGH"<<endl;}
+else if(b<66&&b>30){cout<<"CHOICE IS LOW"<<endl;}
+else if(b<30){ cout<<"CHOICE IS TOO LOW"<<endl;}
+    return ' ';
+
+}
+
+char level3()
+{ cout<<"GUESS THE NUMBER "<<endl;
+cin>>n;
+if(n==33){ cout<<"COREECT NUMBER"<<endl;
+cout<<"PLAY AGAIN"<<endl;}
+else if(n>33&&n<50){ cout<<"CHOICE IS HIGH"<<endl;}
+else if(n>50){ cout<<"CHOICE IS TO HIGH"<<endl;}
+else if(n<33&&n>15){cout<<"CHOICE IS LOW"<<endl;}
+else if(n<15){ cout<<"CHOICE IS TOO LOW"<<endl;}
+cout<<"TRY AGAIN"<<endl;
+cin>>m;
+if(m==61){ cout<<"COREECT NUMBER"<<endl;
+cout<<"PLAY AGAIN"<<endl;}
+else if(m>61&&m<80){ cout<<"CHOICE IS HIGH"<<endl;}
+else if(m>80){ cout<<"CHOICE IS TO HIGH"<<endl;}
+else if(m<61&&m>30){cout<<"CHOICE IS LOW"<<endl;}
+else if(m<30){ cout<<"CHOICE IS TOO LOW"<<endl;}
+cout<<"TRY AGAIN"<<endl;
+cin>>b;
+if(b==52){ cout<<"COREECT NUMBER"<<endl;
+cout<<"PLAY AGAIN"<<endl;}
+else if(b>52&&b<70){ cout<<"CHOICE IS HIGH"<<endl;}
+else if(b>70){ cout<<"CHOICE IS TO HIGH"<<endl;}
+else if(b<52&&b>30){cout<<"CHOICE IS LOW"<<endl;}
+else if(b<30){ cout<<"CHOICE IS TOO LOW"<<endl;}
+else { cout<<"END GAME"<<endl;}
+    return ' ';
+}
+};
+int main(int argc, char** argv) {
+    cout<<"||||||||||||||||||||||||||||||||||||||||||||||||"<<endl;
+    cout<<"             NUMBER GUESSING GAME               "<<endl;
+    cout<<"||||||||||||||||||||||||||||||||||||||||||||||||"<<endl;
+    cout<<"                                                                                                      "<<endl;
+    cout<<"CHOOSE LEVEL : "<<endl;
+    cout<<"                   "<<endl;
+    int choice,n,m,b;
+    cout<<"1.LEVEL 1"<<endl;
+    cout<<"2.LEVEL 2"<<endl;
+    cout<<"3.LEVEL 3"<<endl;
+    cin>>choice;
+    game g(n,m,b);
+    switch(choice)
+    { case 1: cout<<g.level1();
+    break;
+    case 2: cout<<g.level2();
+    break;
+    case 3: cout<<g.level3();
+    break;
+    }
+    cout<<"PLAY AGAIN"<<endl;
+    return 0;
+}
